@@ -58,7 +58,7 @@ function OptionsModal(props) {
 	function onDeleteConfirm() {
 		setDialogVisible(false);
 		props.onPressCancel();
-		props.deleteTrack(selectedTrack);
+		// props.deleteTrack(selectedTrack);
 	}
 
 	const modalTitle = `${selectedTrack.title}  •  ${selectedTrack.artist}`;
@@ -92,7 +92,7 @@ function OptionsModal(props) {
 				<ListItem
 					title="Delete"
 					iconProps={icons.delete}
-					onPress={() => setDialogVisible(true)}
+					// onPress={() => setDialogVisible(true)}
 				/>
 				<InputDialog
 					isVisible={isRenameModalVisible}
